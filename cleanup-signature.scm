@@ -22,6 +22,12 @@
     ; Use threshold to separate signature from background
     (gimp-threshold drawable 100 255)
     
+    ; Remove small artifacts (slightly increased radius)
+    (plug-in-despeckle RUN-NONINTERACTIVE image drawable 3 2 1 245)
+    
+    ; Slightly blur the image to smooth edges
+    (plug-in-gauss RUN-NONINTERACTIVE image drawable 0.5 0.5 1)
+    
     ; Invert the image
     (gimp-invert drawable)
     
