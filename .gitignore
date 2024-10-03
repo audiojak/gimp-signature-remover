@@ -1,0 +1,23 @@
+# Log file
+gimp_output.log
+
+# Input image files (assuming common image formats)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+
+# Output image files (assuming they end with _cleaned.png)
+*_cleaned.png
+
+# macOS system files
+.DS_Store
+
+# Temporary files
+*.tmp
+
+# IDE/Editor folders
+.vscode/
+.idea/
